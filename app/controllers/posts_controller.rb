@@ -12,6 +12,7 @@ class PostsController < ApplicationController
     if @post.valid?
      redirect_to post_path(@post)
    else
+     binding.pry
      render :edit
    end
   end
